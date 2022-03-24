@@ -19,7 +19,7 @@ const NoteList: React.FunctionComponent<INoteListProps> = ({
     console.log(note);
     // setNotes(notes.filter((note) => note.id !== id));
     await axios
-      .post("https://ab-notes-backend.herokuapp.com/DeleteUser/", { note })
+      .post("https://ab-notes-backend.herokuapp.com/deleteuser/", { note })
       .then((res) => {
         console.log(res.data);
         // setDeleteData(res.data.handleDelete);
@@ -27,6 +27,7 @@ const NoteList: React.FunctionComponent<INoteListProps> = ({
       .catch((err) => {
         console.log(err);
       });
+    window.location.reload();
   }
   const [data, setData] = React.useState<[]>([]);
 

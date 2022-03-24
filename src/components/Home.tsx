@@ -14,8 +14,6 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <CreateNote notes={notes} setNotes={setNotes} />
 
       <NoteList notes={notes} setNotes={setNotes} />
-
-      <Alrt />
     </>
   );
 };

@@ -48,6 +48,8 @@ const CreateNote: React.FunctionComponent<ICreateNoteProps> = ({
       .catch((err) => {
         console.log(err);
       });
+
+    window.location.reload();
   };
 
   return (

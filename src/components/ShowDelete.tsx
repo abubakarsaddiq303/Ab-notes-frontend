@@ -18,15 +18,16 @@ const ShowDelete: React.FunctionComponent<IShowDeleteProps> = ({
   async function handleDelete(note: object) {
     console.log(note);
     // setNotes(notes.filter((note) => note.id !== id));
-    // await axios
-    //   .post("http://localhost:5000/DeleteUser/", { note })
-    //   .then((res) => {
-    //     console.log(res.data);
-    //     // setDeleteData(res.data.handleDelete);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+    await axios
+      .post("https://ab-notes-backend.herokuapp.com/deleted/", { note })
+      .then((res) => {
+        console.log(res.data);
+        // setDeleteData(res.data.handleDelete);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    window.location.reload();
   }
 
   React.useEffect(() => {

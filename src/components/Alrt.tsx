@@ -1,23 +1,33 @@
 import React from "react";
+import styles from "../styles/Alrt.module.css";
+import { Note } from "../models/note.model";
 
-interface IAlrtProps {}
+interface IAlrtProps {
+  note: Note;
+  handleDelete: (note: object) => void;
+  setOpenAlrt: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const Alrt: React.FunctionComponent<IAlrtProps> = () => {
+const Alrt: React.FunctionComponent<IAlrtProps> = ({
+  handleDelete,
+  note,
+  setOpenAlrt,
+}) => {
   return (
-    <div className="Alrt">
-      <div className="conform">
-        <div className="heading">
+    <div className={styles.Alrt}>
+      <div className={styles.conform}>
+        <div className={styles.heading}>
           <h3>Are you sure?</h3>
         </div>
-        <div className="heading-p">
-          <p>would you like to delete</p>
+        <div className={styles.heading_p}>
+          <p>would you like to delete?</p>
         </div>
-        <div className="buttons">
-          <div className="btn-1">
-            <button>Yes</button>
+        <div className={styles.buttons}>
+          <div className={styles.btn_1}>
+            <p onClick={() => handleDelete(note)}>Yes</p>
           </div>
-          <div className="btn-2">
-            <button>Yes</button>
+          <div className={styles.btn_2}>
+            <p onClick={() => setOpenAlrt(false)}>No</p>
           </div>
         </div>
       </div>

@@ -3,10 +3,47 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+
+  transform: translate(-50%, 0);
 }
 
 .conform {
   width: 20%;
   background: white;
   border-radius: 10px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+.heading_p {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  border-bottom: ridge;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.btn_1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: larger;
+}
+
+.btn_2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: larger;
+  border-left: ridge;
 }
