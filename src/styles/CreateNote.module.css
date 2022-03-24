@@ -1,0 +1,84 @@
+.create_note_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  border-bottom: ridge;
+}
+.create_data {
+  border: 1px solid rgb(255, 255, 255);
+  margin-top: 1rem;
+  border-radius: 10px;
+  width: 50%;
+  height: 15rem;
+}
+.error {
+  padding-left: 1rem;
+  color: red;
+}
+.Create_heading {
+  font-size: larger;
+  color: white;
+
+  text-align: center;
+}
+.Create_heading h2 {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.create_title {
+  padding-bottom: 1rem;
+}
+.create_title input {
+  border: none;
+  width: 97%;
+  font-size: x-large;
+  text-decoration: none;
+  height: 3rem;
+  padding-left: 1rem;
+  background: transparent;
+  color: white;
+}
+.create_title input:focus {
+  outline: none;
+}
+
+.create_title input ::placeholder {
+  font-size: xx-large;
+  background-color: aliceblue;
+  color: white;
+}
+.create_note {
+  padding-bottom: 0.5rem;
+}
+
+.create_note textarea {
+  border: none;
+  width: 97%;
+  font-size: larger;
+  padding-left: 1rem;
+  background: transparent;
+  resize: none;
+  color: white;
+}
+.create_note textarea:focus {
+  outline: none;
+}
+.btn_create {
+  display: flex;
+  justify-content: center;
+}
+.btn_create button {
+  margin: 5px;
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  background: rgb(212, 73, 73);
+  color: white;
+  font-size: large;
+}
+.create_color input {
+  width: 2rem;
+}
