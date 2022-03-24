@@ -32,7 +32,7 @@ const ShowDelete: React.FunctionComponent<IShowDeleteProps> = ({
   React.useEffect(() => {
     async function getData() {
       await axios
-        .get("https://ab-notes-backend.vercel.app/getdelete/")
+        .get("https://ab-notes-backend.herokuapp.com/getdelete/")
         .then((res) => {
           console.log(res.data);
           setData(res.data.getdeleteData);
