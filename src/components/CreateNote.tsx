@@ -40,7 +40,7 @@ const CreateNote: React.FunctionComponent<ICreateNoteProps> = ({
     (textRef.current as HTMLTextAreaElement).value = "";
 
     await axios
-      .post("http://localhost:5000/postuser/", data)
+      .post("https://ab-notes-backend.herokuapp.com/postuser/", data)
       .then((res) => {
         console.log(res.data);
         setData(res.data);
