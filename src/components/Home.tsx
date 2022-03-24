@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NoteList from "./NoteList";
 import CreateNote from "./CreateNote";
 import { Note } from "../models/note.model";
+import Alrt from "./Alrt";
 
 interface IHomeProps {}
 
@@ -13,6 +14,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
       <CreateNote notes={notes} setNotes={setNotes} />
 
       <NoteList notes={notes} setNotes={setNotes} />
+
+      <Alrt />
     </>
   );
 };

@@ -1,0 +1,12 @@
+.Alrt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.conform {
+  width: 20%;
+  background: white;
+  border-radius: 10px;
+}
