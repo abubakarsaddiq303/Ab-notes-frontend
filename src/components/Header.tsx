@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "../styles/Header.module.css";
 import { Link } from "react-router-dom";
+import logo_img from "../images/icons8-note-64.png";
 
 interface IHeaderProps {}
 
@@ -9,6 +10,9 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
     <>
       <div className={styled.navbar}>
         <div className={styled.logo}>
+          <div className={styled.img}>
+            <img src={logo_img}></img>
+          </div>
           <a href="/">
             <h1>AB Notes</h1>
           </a>
@@ -17,7 +21,7 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
         <div className={styled.btn_delete_data}>
           <Link to="/showdelete">
             <button>
-              <a>Show Delete Data</a>
+              <a>See delete Notes</a>
             </button>
           </Link>
         </div>

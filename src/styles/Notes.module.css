@@ -1,11 +1,13 @@
 .note_card {
   width: min-content;
   height: fit-content;
-  border: 1px solid transparent;
+
   margin-left: 1rem;
   margin-top: 1rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px rgb(65, 61, 61);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 16px 38px -12px rgb(0 0 0 / 56%),
+    0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
 }
 .card_data {
   padding: 12px;
@@ -14,9 +16,15 @@
   display: flex;
   justify-content: center;
 }
+.card_title h2 {
+  color: white;
+}
 .card_text {
   display: flex;
   justify-content: center;
+}
+.card_text p {
+  color: white;
 }
 .card_subtitle {
   font-size: x-small;
@@ -31,7 +39,7 @@
   height: 2rem;
   border: none;
   border-radius: 5px;
-  background: rgb(212, 73, 73);
+  background: rgb(255 117 117);
   color: white;
   font-size: large;
   cursor: pointer;

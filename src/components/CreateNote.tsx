@@ -13,7 +13,7 @@ const CreateNote: React.FunctionComponent<ICreateNoteProps> = ({
   notes,
   setNotes,
 }) => {
-  const [color, setColor] = useState<string>("#ff0099");
+  const [color, setColor] = useState<string>("#F5EFFF");
 
   const [error, setError] = React.useState<string>("");
 

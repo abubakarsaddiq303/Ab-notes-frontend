@@ -5,16 +5,23 @@
   width: 100%;
   position: fixed;
   left: 50%;
-  top: 20%;
+  top: 30%;
 
   transform: translate(-50%, 0);
 }
 
 .conform {
-  width: 20%;
-  background: white;
+  width: 26%;
+  background: #cdc1ff;
   border-radius: 10px;
+  box-shadow: 5px 10px 0px -3px rgb(0 0 0 / 20%);
 }
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .heading {
   display: flex;
   justify-content: center;

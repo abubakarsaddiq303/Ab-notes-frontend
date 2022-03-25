@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Alrt.module.css";
 import { Note } from "../models/note.model";
+import warning from "../images/icons8-warning-48.png";
 
 interface IAlrtProps {
   note: Note;
@@ -16,12 +17,19 @@ const Alrt: React.FunctionComponent<IAlrtProps> = ({
   return (
     <div className={styles.Alrt}>
       <div className={styles.conform}>
-        <div className={styles.heading}>
-          <h3>Are you sure?</h3>
+        <div className={styles.content}>
+          <div className={styles.airt_img}>
+            <img src={warning}></img>
+          </div>
+          <div className={styles.heading}>
+            <h2>Confirm</h2>
+          </div>
         </div>
+
         <div className={styles.heading_p}>
-          <p>would you like to delete?</p>
+          <p>would you like to permanent delete?</p>
         </div>
+
         <div className={styles.buttons}>
           <div className={styles.btn_1}>
             <p onClick={() => handleDelete(note)}>Yes</p>
