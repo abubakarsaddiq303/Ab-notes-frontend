@@ -43,6 +43,7 @@ const NoteList: React.FunctionComponent<INoteListProps> = ({
           console.log(err);
         });
     }
+
     getData();
   }, []);
 

@@ -15,7 +15,6 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
               <img src={logo_img}></img>
             </a>
           </div>
-
           <a href="/">
             <h1>AB Notes</h1>
           </a>

@@ -41,6 +41,7 @@ const Notes: React.FunctionComponent<INotesProps> = ({
           </div>
         </div>
       </div>
+
       {openAlrt && (
         <Alrt
           note={note}
