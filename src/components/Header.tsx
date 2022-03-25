@@ -11,7 +11,9 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
       <div className={styled.navbar}>
         <div className={styled.logo}>
           <div className={styled.img}>
-            <img src={logo_img}></img>
+            <a href="/">
+              <img src={logo_img}></img>
+            </a>
           </div>
 
           <a href="/">

@@ -71,7 +71,9 @@ const CreateNote: React.FunctionComponent<ICreateNoteProps> = ({
           </div>
 
           <div className={styles.create_color}>
-            <label style={{ padding: "9px", fontSize: "x-larger" }}>
+            <label
+              style={{ padding: "9px", fontSize: "x-larger", color: "#757575" }}
+            >
               pick color
             </label>
 

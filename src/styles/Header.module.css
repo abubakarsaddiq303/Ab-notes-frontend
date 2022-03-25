@@ -8,7 +8,7 @@
   align-items: center;
 }
 .navbar h1 {
-  color: #f5efff;
+  color: #dfd7ff;
   padding-left: 1rem;
 }
 .img img {
@@ -31,8 +31,8 @@
   border: none;
   border-radius: 5px;
   background: rgb(255 117 117);
-  color: white;
+  color: #dfd7ff;
   font-size: large;
-  border: 1px solid;
+
   cursor: pointer;
 }
