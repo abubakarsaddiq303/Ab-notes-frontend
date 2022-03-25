@@ -13,6 +13,7 @@ const Header: React.FunctionComponent<IHeaderProps> = () => {
           <div className={styled.img}>
             <img src={logo_img}></img>
           </div>
+
           <a href="/">
             <h1>AB Notes</h1>
           </a>

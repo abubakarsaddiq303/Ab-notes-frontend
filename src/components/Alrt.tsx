@@ -21,6 +21,7 @@ const Alrt: React.FunctionComponent<IAlrtProps> = ({
           <div className={styles.airt_img}>
             <img src={warning}></img>
           </div>
+
           <div className={styles.heading}>
             <h2>Confirm</h2>
           </div>
@@ -34,6 +35,7 @@ const Alrt: React.FunctionComponent<IAlrtProps> = ({
           <div className={styles.btn_1}>
             <p onClick={() => handleDelete(note)}>Yes</p>
           </div>
+
           <div className={styles.btn_2}>
             <p onClick={() => setOpenAlrt(false)}>No</p>
           </div>
