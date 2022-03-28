@@ -74,7 +74,11 @@ const CreateNote: React.FunctionComponent<ICreateNoteProps> = ({
             <label
               style={{ padding: "9px", fontSize: "x-larger", color: "#757575" }}
             >
-              pick color
+              pick <span style={{ color: "red", letterSpacing: "1px" }}>C</span>
+              <span style={{ color: "blue", letterSpacing: "1px" }}>o</span>
+              <span style={{ color: "lime", letterSpacing: "1px" }}>l</span>
+              <span style={{ color: "yellow", letterSpacing: "1px" }}>o</span>
+              <span style={{ color: "#00e2ff", letterSpacing: "1px" }}>r</span>
             </label>
 
             <input
